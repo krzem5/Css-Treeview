@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+div.file-view {
+	padding: 4px;
+	border: 5px solid #5b5b5b;
+	background: #202020;
+	margin: 14px 0;
+	user-select: none;
+}
+div.file-view pre.view {
+	padding: 0;
+	background: #202020;
+	margin: 0;
+}
+div.file-view pre.view span.vl {
+	border-left: 0.9px dotted #373737;
+}
+div.file-view pre.view span.vl::after {
+	content: "    ";
+	position: absolute;
+	height: auto;
+	transform: translate(calc(-100% + 2px),0);
+	border-left: 0.9px dotted #373737;
+}
+div.file-view pre.view span.r {
+	color: #6ab825;
+	font-weight: bold;
+}
+div.file-view pre.view span.d {
+	color: #ed9d13;
+}
+div.file-view pre.view span.o {
+	font-weight: bold;
+	color: #d0d0d0;
+	opacity: 1;
+	transition: linear opacity 0.2s
+}
+div.file-view pre.view span.o.s {
+	opacity: 0;
+}
+div.file-view pre.view span.f {
+	color: #3677a9;
+}
+div.file-view pre.view span.f.p {
+	color: #40ffff;
+}
+div.file-view pre.view span.f.e {
+	color: #d22323;
+}
+div.file-view pre.view i.a {
+	color: #d0d0d0;
+	font-size: 10px;
+	transform: rotate(0deg);
+	transition: linear transform 0.2s;
+}
+div.file-view pre.view i.a.s {
+	transform: rotate(90deg);
+}
+div.file-view pre.view div.go {
+	position: relative;
+	overflow: hidden;
+}
+div.file-view pre.view div.go>div.g.r {
+	position: absolute;
+	transform: translate(0,0);
+	transition: linear transform 0.2s;
+}
+div.file-view pre.view div.go.s>div.g {
+	transform: translate(0,-100%);
+}
