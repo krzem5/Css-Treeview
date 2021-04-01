@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+
+body {
+	width: 100%;
+	height: 100%
+}
+body, body * {
+	margin: 0;
+	padding: 0;
+}
+.wr {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
 div.file-view {
 	padding: 4px;
 	border: 5px solid #5b5b5b;
