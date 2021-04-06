@@ -59,7 +59,7 @@ function render_tree(tree,rt){
 	}
 	var d={"d":{},"f":[]};
 	for (var s of tree.split(";")){
-		s=s.replace("\n|\t|\s","");
+		s=s.replace(/\n|\t|\s/gm,"");
 		if (s==""){
 			continue;
 		}
